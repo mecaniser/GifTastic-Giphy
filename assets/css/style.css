@@ -1,0 +1,89 @@
+#global {
+    background: url(../images/carbon_fibre_big.png)
+}
+
+#header {
+    background-color: turquoise;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Cabin Sketch', cursive;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topImgL {
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+}
+
+#topImgR {
+    width: 30%;
+    float: right;
+    margin-right: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+#newCar {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* float: left; */
+}
+
+#carSearch {
+    font-family: 'Cabin Sketch', cursive;
+    background: url(../images/congruent_outline.png);
+    color: turquoise;
+    padding: 0 10px;
+
+}
+
+#gifZone {
+    clear: both;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.carGiphy {
+    padding: 2px;
+    width: 100%;
+}
+
+#carInput {
+    margin: 0 10px;
+    color: turquoise
+}
+input{
+    background: whitesmoke;
+}
+p{
+   color: yellow;
+}
+.dreamCar{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.col-md-3{
+    border-bottom: yellow;
+}
+@media only screen and (min-width: 1200px) {
+    #topImgL {
+        width: 20%;
+        float: left;
+        margin-left: 20px;
+    }
+    #topImgR {
+        width: 20%;
+        float: right;
+        margin-right: 20px;
+    }
+}
