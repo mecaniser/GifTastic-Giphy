@@ -2,32 +2,101 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <title>Car Giphy</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-
-    <title>Cars Giphy</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Indie+Flower|Julius+Sans+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <header>Your favorite car</header>
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>On this page we will display all your favorite cars</h1>
+<body id="global">
+    <div class="jumbotron" id="header">
+        <div class="row">
+            <div class="col-lg-12">
+                <img id="topImgL" src="assets/images/giphy-tumblr.gif">
+                <img id="topImgR" src="assets/images/giphy-downsized.gif">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <H1>CarMania</H1>
+                        <p>Click the buttons to display GIPHYs of your Dream Car</p>
+                        <p>Click the GIPHYs to pause and play</p>
+                        <p>Search to add a New Car button!</p>
+                        <p>Click on it!</p>
+                    </div>
+                    <div class="col-md-2"></div>
                 </div>
+                <!--end of row -->
             </div>
-            <hr class="my-4">
-            <diw class="row">
-                <div class="col-md-6">
-                    <h1>On this spot we will see another rubric</h1>
-                </div>
-            </diw>
         </div>
+        <!--end of row -->
     </div>
+    <!--end of jumbotron container -->
+
+    <hr class="my-4">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="col-md-12">
+                <form class="form-inline" id="carSearch">
+                    <div class="form-group">
+                        <label for="carInput">
+                            <h4 class="dreamCar"> Search for a New Dream Car</h4>
+                        </label>
+                        <input type="text" id="carInput">
+                    </div>
+                    <!-- Button triggers newCar to be added -->
+                    <input id="addNewCar" type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-lg-2"></div>
+    </div>
+    <!--end of row -->
+
+    <hr class="my-4">
+    <div class="row">
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="btn-group inline pull-left">
+
+                    <button class="btn btn-outline-warning" id="newCar" data-search="BMW drifting">BMW</button>
+                    <button class="btn btn-outline-warning" id="newCar" data-search="Bugatti cars">Bugatti</button>
+                    <button class="btn btn-outline-warning" id="newCar" data-search="Tesla">Tesla</button>
+                    <button class="btn btn-outline-warning" id="newCar" data-search="Dodge Viper">Dodge Viper</button>
+
+                    <div id="myBtns"></div>
+                </div>
+                <!--end of button group -->
+            </div>
+        </div>
+        <!--end of container -->
+    </div>
+    <!--end of row -->
+    <hr class="my-4">
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifZone"></div>
+            </span>
+        </div>
+        <!--end of container -->
+    </div>
+    <!-- end of row  -->
+
+    </div>
+    </div>
+    <script type="text/javascript" src="assets/js/giphy.js">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </body>
 
 </html>
